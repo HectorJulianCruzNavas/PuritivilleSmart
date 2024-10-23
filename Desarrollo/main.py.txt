@@ -1,0 +1,27 @@
+main.py:
+from traffic_prediction import predict_traffic
+from energy_management import predict_energy_demand
+from water_management import predict_water_usage
+from security_monitoring import monitor_security
+
+def run_system():
+    print("Iniciando el sistema Intelligent City Vision...")
+
+    # Predicción de tráfico
+    traffic_prediction = predict_traffic()
+    print(f"Predicción de tráfico: {traffic_prediction}")
+
+    # Predicción de demanda energética
+    energy_prediction = predict_energy_demand()
+    print(f"Predicción de demanda energética: {energy_prediction}")
+
+    # Predicción de uso de agua
+    water_prediction = predict_water_usage()
+    print(f"Predicción de uso de agua: {water_prediction}")
+
+    # Monitoreo de seguridad
+    security_alerts = monitor_security()
+    print(f"Alertas de seguridad: {security_alerts}")
+
+if __name__ == "__main__":
+    run_system()

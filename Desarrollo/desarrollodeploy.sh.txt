@@ -1,0 +1,16 @@
+/desarrollo/deploy.sh
+#!/bin/bash
+
+echo "Iniciando la instalación del sistema Intelligent City Vision..."
+
+# Instalar dependencias
+pip install -r requirements.txt
+
+# Configurar base de datos MongoDB
+echo "Configurando MongoDB..."
+mongo --eval 'use intelligent_city_db'
+
+# Otras configuraciones necesarias
+echo "Configuraciones adicionales completadas."
+
+echo "El sistema está listo para ser ejecutado."
