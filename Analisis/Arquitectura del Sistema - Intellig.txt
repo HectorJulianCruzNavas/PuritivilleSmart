@@ -1,0 +1,35 @@
+Arquitectura del Sistema - Intelligent City Vision
+
+Descripción General:
+
+El sistema Intelligent City Vision está diseñado para optimizar la gestión de recursos en una ciudad inteligente mediante el uso de tecnologías avanzadas como IoT, inteligencia artificial y machine learning. El sistema predice la demanda de servicios clave, como energía, tráfico, agua, y seguridad, lo que permite a la ciudad anticiparse y actuar de manera proactiva.
+
+Componentes Principales del Sistema
+
+1. Sensores IoT:
+Los sensores IoT recolectan datos en tiempo real sobre el tráfico, el consumo de energía, el uso de agua y la seguridad de la ciudad. Estos sensores son dispositivos físicos que están distribuidos por diferentes áreas de la ciudad y pueden detectar variables como flujo vehicular, calidad del agua, consumo eléctrico, y eventos de seguridad.
+
+2. Red de Comunicación:
+La red de comunicación utiliza tecnologías como 5G, LoRaWAN o Wi-Fi para transmitir los datos recolectados por los sensores IoT al servidor central. La comunicación es en tiempo real y asegura que los datos sean entregados de forma rápida y segura para su procesamiento.
+
+3. Servidor Central y Almacenamiento en la Nube:
+El servidor central es responsable de recibir, almacenar y procesar los datos. Está alojado en una plataforma en la nube, como AWS o Google Cloud, lo que permite la escalabilidad y alta disponibilidad. Los datos recolectados son almacenados en bases de datos NoSQL, como MongoDB, para manejar grandes volúmenes de datos no estructurados.
+
+4. Módulo de Machine Learning:
+El corazón del sistema es el módulo de machine learning, que analiza los datos en tiempo real y utiliza algoritmos predictivos para anticipar la demanda de recursos. Este módulo se actualiza continuamente con datos nuevos para mejorar la precisión de las predicciones.
+
+5. Interfaz de Usuario:
+La interfaz de usuario es una aplicación web/móvil que permite a los gestores de la ciudad visualizar el estado actual de los recursos, las predicciones y las alertas. A través de dashboards interactivos, los operadores pueden gestionar el tráfico, ajustar la distribución de recursos y responder a incidentes de seguridad.
+
+-Diagrama de Arquitectura
+[Sensores IoT] → [Red de Comunicación] → [Servidor Central] → [Módulo de Machine Learning] ↓ ↓ [Plataforma Web/Móvil] ← [Sistema de Gestión de Alertas]
+
+
+-Flujo de Datos:
+1. Captura de Datos: Los sensores IoT recolectan información en tiempo real sobre el tráfico, el consumo de energía y agua, y eventos de seguridad.
+2. Transmisión de Datos: Los datos son enviados a través de la red de comunicación al servidor central.
+3. Procesamiento de Datos: El servidor central almacena los datos y los modelos de machine learning los procesan para hacer predicciones.
+4. Visualización y Monitoreo: Los gestores de la ciudad pueden monitorear las predicciones y el estado de los recursos desde la interfaz de usuario.
+5. Alertas y Respuesta: Si el sistema detecta un evento crítico, se generan alertas automáticas que son enviadas a los responsables para tomar acción.
+
+
