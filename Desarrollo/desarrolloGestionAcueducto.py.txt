@@ -1,9 +1,0 @@
-/desarrollo/GestionAcueducto.py
-import random
-
-def predict_water_usage():
-    # Simulación de predicción de uso de agua
-    water_usage = random.uniform(200, 800)  # Consumo de agua en miles de litros
-    
-    # Se podrían agregar factores como datos meteorológicos en un modelo real
-    return f"{water_usage:.2f} mil litros"
