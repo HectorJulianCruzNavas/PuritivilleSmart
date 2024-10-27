@@ -1,9 +1,0 @@
-/desarrollo/GestionEnergetica.py
-import random
-
-def predict_energy_demand():
-    # Simulación de predicción de demanda energética
-    energy_demand = random.uniform(500, 1500)  # Demanda en MW
-    
-    # Aquí se incluirían modelos de machine learning para predecir picos de demanda energética
-    return f"{energy_demand:.2f} MW"
